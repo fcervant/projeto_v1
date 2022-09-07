@@ -69,7 +69,37 @@ fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git branch
   main
 fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ 
 
-# em caso de alteração no nome da branch, a mesma precisa ser atualizada no git remoto, repetir o processo anterior (add, commit, push)
+# em caso de alteração no nome da branch, a mesma precisa ser atualizada no git remoto, repetir o processo anterior (add, commit). Porém antes do push do branch renomeado é necessário remover o branch anterior.
+
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git branch
+* frc_projeto_v1
+  main
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git branch -m frc_projeto_v2
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git branch
+* frc_projeto_v2
+  main
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git push origin --delete frc_projeto_v1
+To https://github.com/fcervant/projeto_v1.git
+ - [deleted]         frc_projeto_v1
+
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git push origin frc_projeto_v2
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.49 KiB | 1.49 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote: 
+remote: Create a pull request for 'frc_projeto_v2' on GitHub by visiting:
+remote:      https://github.com/fcervant/projeto_v1/pull/new/frc_projeto_v2
+remote: 
+To https://github.com/fcervant/projeto_v1.git
+ * [new branch]      frc_projeto_v2 -> frc_projeto_v2
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ 
+
+
+
 
 
 
