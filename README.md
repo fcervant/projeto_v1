@@ -119,6 +119,49 @@ fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git commit -m "Atualiz
  create mode 100644 info.txt
 fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ 
 
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git push origin HEAD:frc_projeto_v2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 817 bytes | 272.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/fcervant/projeto_v1.git
+   ef59b1b..b50f4d8  HEAD -> frc_projeto_v2
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ 
+
+
+# checando os branches no git remoto
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git branch -r
+  origin/HEAD -> origin/main
+  origin/frc_projeto_v2
+  origin/main
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ 
+
+# fazendo checkout direto no branch remoto
+
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git checkout origin/frc_projeto_v2
+M       README.md
+Note: switching to 'origin/frc_projeto_v2'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b50f4d8 Atualizando ajustes arquivo README.md
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git checkout origin/frc_projeto_v2
 
 
 
