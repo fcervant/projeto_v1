@@ -98,7 +98,26 @@ To https://github.com/fcervant/projeto_v1.git
  * [new branch]      frc_projeto_v2 -> frc_projeto_v2
 fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ 
 
+# agora é possível continuar trabalhando na versão do branch atual - frc_projeto_v2, sempre que ocorrer uma alteração executar o mesmo processo - status, add, commit, push com a opção HEAD>branch
 
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git status
+No ramo frc_projeto_v2
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+        info.txt
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git add -A
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ git commit -m "Atualizando novo arquivo info.txt"
+[frc_projeto_v2 ef59b1b] Atualizando novo arquivo info.txt
+ 2 files changed, 32 insertions(+), 1 deletion(-)
+ create mode 100644 info.txt
+fernandorc@fernandorc-VirtualBox:~/Documentos/projeto_v1$ 
 
 
 
